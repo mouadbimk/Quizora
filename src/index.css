@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
+:root {
+  --background-color: #f1f3f5;
+  --color-text: #094067;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Stack Sans Headline", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--background-color);
+  height: 100vh;
+}
