@@ -1,0 +1,174 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "React Fundamentals",
+      "description": "Test your knowledge of the fundamental concepts of React, including components, state, and props.",
+      "category": "technology",
+      "difficulty": "easy",
+      "duration": 10,
+      "questiones": [
+        {
+          "question": "What is JSX?",
+          "options": [
+            "A JavaScript syntax extension",
+            "A templating engine",
+            "A CSS preprocessor",
+            "A database query language"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "How do you pass data from a parent component to a child component?",
+          "options": [
+            "Using state",
+            "Using props",
+            "Using context",
+            "Using refs"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "What hook is used to manage state in a functional component?",
+          "options": ["useEffect", "useContext", "useState", "useReducer"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Which method is called once a component is mounted in the DOM?",
+          "options": [
+            "componentWillMount",
+            "componentDidUpdate",
+            "render",
+            "useEffect with an empty dependency array"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "What does `ReactDOM.createRoot()` do?",
+          "options": [
+            "Renders a React element into the DOM",
+            "Creates a root DOM node for a React app",
+            "Creates a virtual DOM tree",
+            "Unmounts a component"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "World History: Ancient Civilizations",
+      "description": "Explore the great civilizations of the ancient world, from Egypt to Rome.",
+      "category": "history",
+      "difficulty": "medium",
+      "duration": 15,
+      "questiones": [
+        {
+          "question": "Which ancient civilization built the pyramids?",
+          "options": [
+            "The Greeks",
+            "The Romans",
+            "The Egyptians",
+            "The Mayans"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Who was the first emperor of Rome?",
+          "options": ["Julius Caesar", "Augustus", "Nero", "Constantine"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "The ancient city of Babylon was located in modern-day...",
+          "options": ["Egypt", "Greece", "Turkey", "Iraq"],
+          "correctAnswer": 3
+        },
+        {
+          "question": "What is the name of the ancient writing system used by the Sumerians?",
+          "options": ["Hieroglyphics", "Cuneiform", "Sanskrit", "Alphabet"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "The Parthenon is a famous temple dedicated to which Greek goddess?",
+          "options": ["Hera", "Aphrodite", "Athena", "Artemis"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "The Terracotta Army was discovered in which country?",
+          "options": ["Japan", "India", "China", "Vietnam"],
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Solar System",
+      "description": "A quiz about the planets, moons, and other celestial bodies in our solar system.",
+      "category": "science",
+      "difficulty": "easy",
+      "duration": 5,
+      "questiones": [
+        {
+          "question": "Which planet is known as the Red Planet?",
+          "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "What is the largest planet in our solar system?",
+          "options": ["Earth", "Saturn", "Jupiter", "Neptune"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Which planet is closest to the Sun?",
+          "options": ["Mercury", "Venus", "Earth", "Mars"],
+          "correctAnswer": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Renaissance Art",
+      "description": "Identify famous artists and masterpieces from the Renaissance period.",
+      "category": "arts",
+      "difficulty": "hard",
+      "duration": 15,
+      "questiones": [
+        {
+          "question": "Who painted the Mona Lisa?",
+          "options": [
+            "Michelangelo",
+            "Raphael",
+            "Leonardo da Vinci",
+            "Donatello"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Which artist sculpted the statue of David?",
+          "options": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael",
+            "Sandro Botticelli"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "The \"School of Athens\" is a famous fresco painted by which artist?",
+          "options": ["Titian", "Giotto", "Raphael", "Caravaggio"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Sandro Botticelli is famous for painting which masterpiece?",
+          "options": [
+            "The Last Supper",
+            "The Birth of Venus",
+            "The Creation of Adam",
+            "The Arnolfini Portrait"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    }
+  ]
+}

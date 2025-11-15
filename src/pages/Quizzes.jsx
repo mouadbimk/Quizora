@@ -1,5 +1,6 @@
 import AppNav from "../components/AppNav";
 import styles from "./Quizzes.module.css";
+import QuizzesList from "../components/QuizzesList";
 function Quizzes() {
   return (
     <>
@@ -29,6 +30,7 @@ function Quizzes() {
             </div>
           </div>
         </div>
+        <QuizzesList />
       </div>
     </>
   );

@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 3.2rem;
 }
 .box_search input {
   padding: 0.9rem 1.2rem;

@@ -18,3 +18,32 @@
   transform: translateY(-4px);
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
 }
+.quizBtn {
+  background-color: #fffe;
+  border: 1px solid #adb5bd;
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  transition: all 0.4s ease;
+}
+.quizBtn:hover {
+  background-color: #f1f3f5;
+  border-radius: 2rem;
+}
+.answerBtn {
+  background-color: #fffe;
+  border: 1px solid #adb5bd;
+  width: 100%;
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.5rem;
+  transition: all 0.4s ease;
+}
+.answerBtn:hover {
+  background-color: #f1f3f5;
+}
+:global(.active) {
+  border: 1px solid #1c7ed6;
+  color: #1c7ed6;
+}
