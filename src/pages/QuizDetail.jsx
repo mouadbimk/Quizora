@@ -126,7 +126,10 @@ function QuizDetail() {
           </span>
         </div>
       </div>
-      <Button type={"primary"} onClick={() => navigate("../start?quiz=1982d")}>
+      <Button
+        type={"primary"}
+        onClick={() => navigate(`../${id}/start?title=`)}
+      >
         Start Quiz Now
       </Button>
     </>

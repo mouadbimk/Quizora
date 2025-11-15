@@ -34,7 +34,7 @@ export default function App() {
         />
         <Route path="quiz-detail" element={<QuizLayout />}>
           <Route path=":id" element={<QuizDetail />} />
-          <Route path="start" element={<QuizStart />} />
+          <Route path=":id/start" element={<QuizStart />} />
         </Route>
       </Routes>
     </BrowserRouter>

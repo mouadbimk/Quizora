@@ -1,8 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./QuizStart.module.css";
 import Button from "../components/Button";
+import { useParams } from "react-router-dom";
 
 export default function QuizStart() {
+  const [isLoading, setIsLoading] = useState(false);
+  const { id } = useParams();
+  const title = String(id).replaceAll("-", " ");
+  console.log(title);
+  useEffect(() => {
+    const controller = new AbortController();
+    async function fetchQuiz() {
+      const res = await fetch(`http://localhost:8800/quizzes?id=${id}`, {
+        signal: controller.signal,
+      });
+      const data = await res.json();
+      console.log(data);
+    }
+    fetchQuiz();
+    return function () {
+      controller.abort();
+    };
+  }, [id]);
   const [value, setValue] = useState(10);
   return (
     <div>
