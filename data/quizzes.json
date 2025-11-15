@@ -7,7 +7,7 @@
       "category": "technology",
       "difficulty": "easy",
       "duration": 10,
-      "questiones": [
+      "questions": [
         {
           "question": "What is JSX?",
           "options": [
@@ -62,7 +62,7 @@
       "category": "history",
       "difficulty": "medium",
       "duration": 15,
-      "questiones": [
+      "questions": [
         {
           "question": "Which ancient civilization built the pyramids?",
           "options": [
@@ -107,7 +107,7 @@
       "category": "science",
       "difficulty": "easy",
       "duration": 5,
-      "questiones": [
+      "questions": [
         {
           "question": "Which planet is known as the Red Planet?",
           "options": ["Venus", "Mars", "Jupiter", "Saturn"],
@@ -132,7 +132,7 @@
       "category": "arts",
       "difficulty": "hard",
       "duration": 15,
-      "questiones": [
+      "questions": [
         {
           "question": "Who painted the Mona Lisa?",
           "options": [

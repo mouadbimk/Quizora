@@ -62,6 +62,10 @@
   justify-self: center;
   border-radius: 1rem;
   transition: all 0.4s ease;
+  text-transform: capitalize;
+}
+.filter option {
+  text-transform: capitalize;
 }
 .filter select:focus {
   border: 1px solid #1971c2;

@@ -43,9 +43,7 @@ export default function QuizStart() {
           <Button type={"answerBtn"}>A database query language</Button>
         </div>
         <div className={styles.controls}>
-          <Button type={"answerBtn"} style={{ width: "fit-content" }}>
-            Previous
-          </Button>
+          <Button type={"previousBtn"}>Previous</Button>
           <Button type={"primary"}>Next</Button>
         </div>
       </div>

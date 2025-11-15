@@ -31,7 +31,8 @@
   background-color: #f1f3f5;
   border-radius: 2rem;
 }
-.answerBtn {
+.answerBtn,
+.previousBtn {
   background-color: #fffe;
   border: 1px solid #adb5bd;
   width: 100%;
@@ -40,10 +41,14 @@
   padding: 1.2rem 1.5rem;
   transition: all 0.4s ease;
 }
-.answerBtn:hover {
+.previousBtn {
+  width: fit-content;
+}
+.answerBtn:hover,
+.previousBtn:hover {
   background-color: #f1f3f5;
 }
-:global(.active) {
+:global(button.active) {
   border: 1px solid #1c7ed6;
   color: #1c7ed6;
 }
