@@ -19,7 +19,7 @@ function Quizzes({ isLoading, quizzes }) {
       <div className={styles.quizzes}>
         <h1>Browse Quizzes</h1>
         {isLoading && <Loader />}
-        {!quizzes.length === 0 && <p>No Quizzes now.</p>}
+        {!isLoading && quizzes.length === 0 && <p>No quizzes now.</p>}
         {quizzes.length > 0 && (
           <>
             <div className={styles.box_search}>

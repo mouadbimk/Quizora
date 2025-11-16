@@ -1,0 +1,2201 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "React Fundamentals",
+      "description": "Test your knowledge of the fundamental concepts of React, including components, state, props, JSX, hooks, and rendering logic.",
+      "category": "technology",
+      "difficulty": "easy",
+      "duration": 10,
+      "questions": [
+        {
+          "question": "In React, what is JSX?",
+          "options": [
+            "A syntax extension for JavaScript that lets you write HTML-like markup",
+            "A templating engine",
+            "A backend framework",
+            "A database query syntax"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "How do you pass data to a child component?",
+          "options": [
+            "Using props",
+            "Using hooks",
+            "Using events",
+            "Using reducers"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which hook handles side effects?",
+          "options": ["useState", "useEffect", "useCallback", "useRef"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which hook creates state?",
+          "options": ["useMemo", "useState", "useReducer", "useId"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is a component in React?",
+          "options": [
+            "A reusable UI element",
+            "A database record",
+            "A CSS module",
+            "A build tool"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What does ReactDOM.createRoot() do?",
+          "options": [
+            "Creates the root where the app will be rendered",
+            "Creates props",
+            "Creates a reducer",
+            "Creates JSX"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What causes a component to re-render?",
+          "options": [
+            "State change",
+            "CSS load",
+            "Image load",
+            "HTML comments"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What does useRef return?",
+          "options": [
+            "An object with a .current property",
+            "A state tuple",
+            "A reducer function",
+            "A memoized value"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What is key used for in lists?",
+          "options": [
+            "To help React identify list items",
+            "To style items",
+            "To change item order",
+            "To create animations"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is TRUE?",
+          "options": [
+            "Props are immutable",
+            "Props can be modified",
+            "Props create state",
+            "Props control DOM manually"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "title": "Ancient Civilizations",
+      "description": "Explore key facts, leaders, cities, and achievements of ancient civilizations.",
+      "category": "history",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "Which civilization built the pyramids?",
+          "options": ["Greek", "Roman", "Egyptian", "Persian"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Who was the first emperor of Rome?",
+          "options": ["Caesar", "Augustus", "Nero", "Constantine"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Where was Babylon located?",
+          "options": ["Egypt", "Turkey", "Greece", "Iraq"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "Sumerians invented what writing system?",
+          "options": ["Cuneiform", "Hieroglyphics", "Runes", "Alphabet"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Who built the Hanging Gardens?",
+          "options": [
+            "Nebuchadnezzar II",
+            "Alexander the Great",
+            "Ramses II",
+            "Darius"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "The Parthenon is dedicated to which goddess?",
+          "options": ["Hera", "Athena", "Aphrodite", "Artemis"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Terracotta Army discovered in:",
+          "options": ["Japan", "India", "China", "Vietnam"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Egypt depended on which river?",
+          "options": ["Euphrates", "Tigris", "Indus", "Nile"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "What was Sparta famous for?",
+          "options": [
+            "Philosophy",
+            "Military discipline",
+            "Architecture",
+            "Trade routes"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What writing material did Egyptians invent?",
+          "options": ["Paper", "Papyrus", "Clay tablets", "Ink stones"],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "The Solar System",
+      "description": "Learn about planets, moons, and celestial objects in our solar system.",
+      "category": "science",
+      "difficulty": "easy",
+      "duration": 6,
+      "questions": [
+        {
+          "question": "What planet is known as the Red Planet?",
+          "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Largest planet?",
+          "options": ["Earth", "Jupiter", "Neptune", "Uranus"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Closest to the sun?",
+          "options": ["Venus", "Mercury", "Earth", "Mars"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Earth’s natural satellite?",
+          "options": ["Europa", "Moon", "Titan", "Io"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Planet with rings:",
+          "options": ["Mars", "Earth", "Saturn", "Mercury"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Pluto is now a:",
+          "options": ["Planet", "Moon", "Dwarf planet", "Asteroid"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which planet rotates sideways?",
+          "options": ["Mars", "Venus", "Uranus", "Saturn"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which planet has the Great Red Spot?",
+          "options": ["Jupiter", "Mars", "Neptune", "Mercury"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What galaxy do we live in?",
+          "options": ["Whirlpool", "Andromeda", "Milky Way", "Sombrero"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Sun is a:",
+          "options": ["Planet", "Star", "Asteroid", "Comet"],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "Renaissance Art",
+      "description": "Test your knowledge about Renaissance artists and masterpieces.",
+      "category": "arts",
+      "difficulty": "hard",
+      "duration": 15,
+      "questions": [
+        {
+          "question": "Who painted the Mona Lisa?",
+          "options": [
+            "Michelangelo",
+            "Raphael",
+            "Leonardo da Vinci",
+            "Donatello"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Who sculpted David?",
+          "options": ["Michelangelo", "Donatello", "Verrocchio", "Raphael"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "School of Athens was painted by:",
+          "options": ["Caravaggio", "Raphael", "Titian", "Giotto"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Birth of Venus painter:",
+          "options": ["Botticelli", "Leonardo", "Michelangelo", "Caravaggio"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Who painted Sistine Chapel ceiling?",
+          "options": ["Raphael", "Michelangelo", "Dürer", "Botticelli"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Renaissance started in:",
+          "options": ["Rome", "Florence", "Venice", "Paris"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Primary Renaissance characteristic:",
+          "options": [
+            "Gold backgrounds",
+            "Flat figures",
+            "Realism & Perspective",
+            "Avoiding religious themes"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "The Last Supper was painted by:",
+          "options": [
+            "Michelangelo",
+            "Raphael",
+            "Leonardo da Vinci",
+            "Caravaggio"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Renaissance period was between:",
+          "options": [
+            "14th-17th century",
+            "5th-8th century",
+            "19th-20th century",
+            "1st-3rd century"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Mona Lisa is located in:",
+          "options": ["Prado Museum", "Vatican", "Louvre Museum", "Uffizi"],
+          "correctAnswer": 2,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "title": "Computer Networks",
+      "description": "Basics about OSI model, protocols, and networking hardware.",
+      "category": "technology",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "What does TCP stand for?",
+          "options": [
+            "Transmission Control Protocol",
+            "Transfer Connection Port",
+            "Transmission Center Process",
+            "Terminal Control Program"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Router works at which OSI layer?",
+          "options": ["Transport", "Application", "Network", "Physical"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which protocol is used to translate domain names?",
+          "options": ["HTTP", "DNS", "FTP", "ARP"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Switch works at which OSI layer?",
+          "options": ["Transport", "Data Link", "Network", "Physical"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is IP address used for?",
+          "options": [
+            "Identifying devices on a network",
+            "Encrypting files",
+            "Saving cookies",
+            "Formatting disks"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What does HTTPS add to HTTP?",
+          "options": ["Speed", "Encryption", "Images", "Compression"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What device amplifies signal?",
+          "options": ["Router", "Switch", "Repeater", "Hub"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Fiber optic cables use:",
+          "options": [
+            "Electric signals",
+            "Light",
+            "Sound waves",
+            "Radio waves"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "SMTP is used for:",
+          "options": [
+            "Sending emails",
+            "Downloading files",
+            "Streaming",
+            "Routing"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which protocol is used for secure file transfer?",
+          "options": ["FTP", "SSH", "SFTP", "SMTP"],
+          "correctAnswer": 2,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 6,
+      "title": "Human Anatomy",
+      "description": "Questions about the human body, organs, and biological systems.",
+      "category": "biology",
+      "difficulty": "easy",
+      "duration": 10,
+      "questions": [
+        {
+          "question": "Largest organ?",
+          "options": ["Heart", "Skin", "Liver", "Lungs"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which organ filters blood?",
+          "options": ["Kidneys", "Liver", "Lungs", "Intestine"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Number of bones in adult human?",
+          "options": ["206", "180", "250", "198"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "The brain is part of:",
+          "options": [
+            "Digestive system",
+            "Nervous system",
+            "Respiratory system",
+            "Muscular system"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Femur is located in:",
+          "options": ["Arm", "Leg", "Chest", "Spine"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Red blood cells carry:",
+          "options": ["Oxygen", "Sugar", "Hormones", "Vitamin D"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Organ that pumps blood:",
+          "options": ["Kidneys", "Heart", "Stomach", "Liver"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What protects the spinal cord?",
+          "options": ["Rib cage", "Skull", "Vertebrae", "Pelvis"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which system moves the body?",
+          "options": ["Digestive", "Nervous", "Muscular", "Urinary"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Where is the clavicle?",
+          "options": ["Shoulder", "Leg", "Foot", "Hip"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 7,
+      "title": "Algorithms & Data Structures",
+      "description": "Test your knowledge of algorithms, complexity, and data structures.",
+      "category": "technology",
+      "difficulty": "hard",
+      "duration": 15,
+      "questions": [
+        {
+          "question": "Time complexity of binary search?",
+          "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Stack works on:",
+          "options": ["FIFO", "LIFO", "Random", "Priority"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is a graph traversal algorithm?",
+          "options": ["Bubble Sort", "DFS", "Merge Sort", "Counting Sort"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is NOT a sorting algorithm?",
+          "options": [
+            "Quick Sort",
+            "Heap Sort",
+            "Prim's Algorithm",
+            "Merge Sort"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Hash table provides:",
+          "options": [
+            "O(1) average lookup",
+            "O(n^2)",
+            "O(log n)",
+            "O(n log n)"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which data structure uses FIFO?",
+          "options": ["Queue", "Stack", "Tree", "Graph"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which algorithm finds shortest path?",
+          "options": ["DFS", "Dijkstra", "Kruskal", "Quick Sort"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Balanced binary tree height?",
+          "options": ["O(n)", "O(1)", "O(log n)", "O(n log n)"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which is dynamic programming?",
+          "options": [
+            "Solving by splitting and memorizing results",
+            "Guessing",
+            "Sorting items",
+            "Simulating trees"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Heap is used to implement:",
+          "options": ["Priority queue", "Stack", "Array", "Linked list"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 8,
+      "title": "Marvel Trivia",
+      "description": "Fun questions about the Marvel Cinematic Universe.",
+      "category": "entertainment",
+      "difficulty": "easy",
+      "duration": 8,
+      "questions": [
+        {
+          "question": "What is Iron Man’s real name?",
+          "options": [
+            "Steve Rogers",
+            "Tony Stark",
+            "Bruce Banner",
+            "Peter Parker"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Hero with hammer:",
+          "options": ["Loki", "Thor", "Odin", "Hawkeye"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Vision has which stone?",
+          "options": ["Power", "Mind", "Space", "Reality"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What metal is Captain America’s shield made of?",
+          "options": ["Steel", "Vibranium", "Titanium", "Adamantium"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Black Panther’s country:",
+          "options": ["Wakanda", "Asgard", "Sokovia", "Latveria"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Hulk’s real name:",
+          "options": [
+            "Peter Quill",
+            "Bruce Banner",
+            "Bucky Barnes",
+            "Scott Lang"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Thanos collects:",
+          "options": ["Rings", "Stones", "Keys", "Swords"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Who is Star-Lord?",
+          "options": [
+            "Peter Parker",
+            "Peter Quill",
+            "Steve Rogers",
+            "Scott Lang"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Wanda’s powers come from:",
+          "options": [
+            "Reality Stone",
+            "Soul Stone",
+            "Mind Stone",
+            "Her father"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Avengers HQ located in:",
+          "options": ["New York", "London", "Sydney", "Paris"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 9,
+      "title": "Basic Mathematics",
+      "description": "Basic arithmetic, algebra, and number concepts.",
+      "category": "math",
+      "difficulty": "easy",
+      "duration": 8,
+      "questions": [
+        {
+          "question": "7 + 5 = ?",
+          "options": ["10", "11", "12", "13"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "9 × 3 = ?",
+          "options": ["18", "27", "36", "12"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Square root of 16?",
+          "options": ["2", "3", "4", "5"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "12 ÷ 4 = ?",
+          "options": ["2", "3", "4", "6"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "5² = ?",
+          "options": ["15", "20", "25", "30"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which is a prime number?",
+          "options": ["9", "15", "17", "21"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "10% of 200?",
+          "options": ["10", "20", "30", "40"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is an even number?",
+          "options": ["17", "21", "42", "55"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Solve: 8 – 3",
+          "options": ["4", "5", "6", "3"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is 3 × 0?",
+          "options": ["0", "3", "1", "Undefined"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Football (Soccer) Knowledge",
+      "description": "Test your knowledge of players, teams, tournaments, and football legends.",
+      "category": "sports",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "Who has won the most Ballon d'Or awards?",
+          "options": [
+            "Cristiano Ronaldo",
+            "Lionel Messi",
+            "Zinedine Zidane",
+            "Ronaldinho"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country won the FIFA World Cup in 2018?",
+          "options": ["Brazil", "Germany", "France", "Argentina"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which club is also known as 'The Red Devils'?",
+          "options": ["Liverpool", "Manchester United", "Arsenal", "Chelsea"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which player is nicknamed 'El Pibe de Oro' (The Golden Boy)?",
+          "options": ["Pele", "Maradona", "Ronaldo Nazário", "Kanté"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country has the most World Cup titles?",
+          "options": ["Germany", "Argentina", "Italy", "Brazil"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "Which team won the UEFA Champions League in 2021?",
+          "options": ["Chelsea", "Man City", "Madrid", "PSG"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which footballer is known as 'CR7'?",
+          "options": ["Mbappé", "Cristiano Ronaldo", "Lewandowski", "Haaland"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which club has the most Champions League titles?",
+          "options": ["Barcelona", "Liverpool", "Real Madrid", "Bayern"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Who won the Ballon d'Or in 2023?",
+          "options": ["Haaland", "Messi", "Mbappé", "Modrić"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which player is famous for the 'Hand of God' goal?",
+          "options": ["Maradona", "Pelé", "Ronaldinho", "Benzema"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 11,
+      "title": "Cybersecurity Essentials",
+      "description": "Learn basic security principles, threats, encryption, and safe practices.",
+      "category": "technology",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "What does 'phishing' mean?",
+          "options": [
+            "A malware program",
+            "A trick to steal sensitive information",
+            "A Wi-Fi hacking technique",
+            "A firewall bypassing method"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is a VPN used for?",
+          "options": [
+            "Faster browsing",
+            "Blocking ads",
+            "Encrypting traffic and hiding IP",
+            "Fixing lag in games"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Strong password example:",
+          "options": ["12345678", "password", "Qw!29#Ad7", "birthday"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "What does HTTPS provide?",
+          "options": ["Speed", "Encryption", "Ads", "Compression"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What does a firewall do?",
+          "options": [
+            "Boosts internet speed",
+            "Monitors and filters network traffic",
+            "Deletes viruses",
+            "Installs applications"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Two-factor authentication requires:",
+          "options": [
+            "Two email accounts",
+            "Two forms of verification",
+            "Two passwords",
+            "Two browsers"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Ransomware does what?",
+          "options": [
+            "Steals photos",
+            "Encrypts files and demands money",
+            "Slows internet",
+            "Deletes games"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is a digital certificate?",
+          "options": [
+            "A web domain",
+            "A document proving identity for encryption",
+            "A passcode",
+            "A server key"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What does 'DoS attack' mean?",
+          "options": [
+            "Data on Server",
+            "Denial of Service",
+            "Download of Software",
+            "Data Overload System"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is a secure connection?",
+          "options": ["http://", "https://", "ftp://", "ws://"],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 12,
+      "title": "World Geography",
+      "description": "Explore capitals, landmarks, continents, and countries around the world.",
+      "category": "geography",
+      "difficulty": "medium",
+      "duration": 10,
+      "questions": [
+        {
+          "question": "Largest continent?",
+          "options": ["Africa", "Asia", "Europe", "North America"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Capital of Canada?",
+          "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Where is Mount Everest?",
+          "options": ["India", "Nepal/China border", "Pakistan", "Bhutan"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Longest river in the world:",
+          "options": ["Amazon", "Nile", "Yangtze", "Congo"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Sahara Desert located in:",
+          "options": ["Asia", "Africa", "Australia", "South America"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Capital of Japan:",
+          "options": ["Tokyo", "Kyoto", "Osaka", "Nagoya"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which ocean is the largest?",
+          "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country has the most islands?",
+          "options": ["Sweden", "Indonesia", "Philippines", "Canada"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which European country is known for tulips?",
+          "options": ["France", "Germany", "Netherlands", "Italy"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Capital of Brazil:",
+          "options": ["Rio", "São Paulo", "Brasília", "Curitiba"],
+          "correctAnswer": 2,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 13,
+      "title": "Cooking & Food Basics",
+      "description": "Test your knowledge of ingredients, cooking terminology and world dishes.",
+      "category": "lifestyle",
+      "difficulty": "easy",
+      "duration": 8,
+      "questions": [
+        {
+          "question": "What is sushi traditionally wrapped in?",
+          "options": ["Rice paper", "Seaweed", "Lettuce", "Corn wrap"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which ingredient makes bread rise?",
+          "options": ["Salt", "Yeast", "Sugar", "Flour"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Mozzarella is a type of:",
+          "options": ["Meat", "Vegetable", "Cheese", "Bread"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Main ingredient in hummus:",
+          "options": ["Beans", "Chickpeas", "Rice", "Lentils"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which country invented pizza?",
+          "options": ["France", "USA", "Italy", "Spain"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Guacamole is made from:",
+          "options": ["Tomato", "Avocado", "Potato", "Pepper"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Main ingredient in paella:",
+          "options": ["Bread", "Rice", "Corn", "Pasta"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is tofu made from?",
+          "options": ["Soybeans", "Corn", "Milk", "Rice"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "A croissant comes from:",
+          "options": ["France", "Italy", "Austria", "Germany"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which spice is red?",
+          "options": ["Turmeric", "Paprika", "Pepper", "Cinnamon"],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 14,
+      "title": "Blockchain & Cryptocurrency",
+      "description": "Learn the basics of Bitcoin, Ethereum, Web3 and decentralized technology.",
+      "category": "finance",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "First cryptocurrency ever created:",
+          "options": ["Ethereum", "Bitcoin", "Litecoin", "Dogecoin"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Blockchain is:",
+          "options": [
+            "A database with linked blocks",
+            "A game",
+            "A programming language",
+            "A wallet"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What is a smart contract?",
+          "options": [
+            "A physical contract",
+            "Self-executing code stored on blockchain",
+            "An encrypted file",
+            "Cloud storage"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Ethereum was created by:",
+          "options": ["Vitalik Buterin", "Elon Musk", "Satoshi", "CZ"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which crypto is known as digital gold?",
+          "options": ["Bitcoin", "Ethereum", "Ripple", "Solana"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "NFT stands for:",
+          "options": [
+            "Non-Fungible Token",
+            "New File Transfer",
+            "Network File Tool",
+            "Non-Financial Token"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Mining is:",
+          "options": [
+            "Creating videos",
+            "Validating transactions",
+            "Making coins physically",
+            "Storing crypto"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is a crypto wallet?",
+          "options": [
+            "A physical wallet",
+            "Software/device storing private keys",
+            "An email",
+            "A router"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which crypto introduced smart contracts?",
+          "options": ["Bitcoin", "Ethereum", "Litecoin", "Cardano"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which network is ETH native to?",
+          "options": ["Polygon", "Solana", "Ethereum", "Avalanche"],
+          "correctAnswer": 2,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 15,
+      "title": "Programming Languages",
+      "description": "Identify syntax, usage, and concepts across Python, Java, JS, C++, and more.",
+      "category": "technology",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "Which language runs in browsers?",
+          "options": ["Python", "C++", "JavaScript", "Java"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Python uses:",
+          "options": ["Brackets", "Indentation", "Semicolons", "Arrows"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Java is:",
+          "options": ["Compiled", "Interpreted", "Both", "Neither"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "C++ supports:",
+          "options": ["OOP only", "Procedural only", "Both", "None"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "JS stands for:",
+          "options": ["Java Syntax", "JavaScript", "JSON Style", "JetScript"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which language is strongly typed?",
+          "options": ["Python", "JavaScript", "TypeScript", "HTML"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which language is used for styling?",
+          "options": ["HTML", "CSS", "JS", "SQL"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "SQL is used for:",
+          "options": ["Styling", "Databases", "AI", "Networking"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is a markup language?",
+          "options": ["JS", "CSS", "HTML", "SQL"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which language is used for iOS apps?",
+          "options": ["Java", "Swift", "PHP", "Go"],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 16,
+      "title": "Physics Fundamentals",
+      "description": "Newton laws, forces, energy, and motion concepts.",
+      "category": "science",
+      "difficulty": "medium",
+      "duration": 11,
+      "questions": [
+        {
+          "question": "Force is measured in:",
+          "options": ["Joule", "Newton", "Pascal", "Watt"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Speed formula:",
+          "options": [
+            "Mass × Gravity",
+            "Distance ÷ Time",
+            "Force ÷ Area",
+            "Work × Power"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Energy unit:",
+          "options": ["Watt", "Joule", "Volt", "Pascal"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Earth gravity approx:",
+          "options": ["5 m/s²", "9.8 m/s²", "12 m/s²", "3 m/s²"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Light speed:",
+          "options": ["3×10⁸ m/s", "3×10⁶ m/s", "3×10⁵ m/s", "3×10⁷ m/s"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is NOT a type of energy?",
+          "options": ["Kinetic", "Potential", "Thermal", "Imaginary"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "Who discovered gravity?",
+          "options": ["Einstein", "Newton", "Tesla", "Galileo"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is a vector quantity?",
+          "options": ["Speed", "Distance", "Velocity", "Mass"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Work = ?",
+          "options": [
+            "Force × Distance",
+            "Speed × Time",
+            "Mass × Volume",
+            "Pressure × Area"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which particle has negative charge?",
+          "options": ["Proton", "Neutron", "Electron", "Ion"],
+          "correctAnswer": 2,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 17,
+      "title": "World Literature",
+      "description": "Famous authors, novels, poems, and literary concepts.",
+      "category": "arts",
+      "difficulty": "medium",
+      "duration": 10,
+      "questions": [
+        {
+          "question": "Who wrote '1984'?",
+          "options": ["George Orwell", "Tolstoy", "Hemingway", "Shakespeare"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Who wrote 'Hamlet'?",
+          "options": ["Dante", "Shakespeare", "Cervantes", "Voltaire"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Author of 'The Little Prince'?",
+          "options": ["Saint-Exupéry", "Victor Hugo", "Kafka", "Poe"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Who wrote 'Crime and Punishment'?",
+          "options": ["Dostoevsky", "Tolstoy", "Pushkin", "Gogol"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Genre of 'The Odyssey'?",
+          "options": ["Epic", "Comedy", "Romance", "Horror"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Who wrote 'Don Quixote'?",
+          "options": ["Homer", "Goethe", "Cervantes", "Ibsen"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "'Les Misérables' author?",
+          "options": ["Voltaire", "Hugo", "Camus", "Balzac"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Who wrote 'The Divine Comedy'?",
+          "options": ["Dante", "Milton", "Homer", "Virgil"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "'Pride and Prejudice' author?",
+          "options": ["Bronte", "Austen", "Woolf", "Shelley"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is a Shakespeare tragedy?",
+          "options": ["Macbeth", "Inferno", "Frankenstein", "Faust"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Health & Fitness Basics",
+      "description": "Basic concepts about exercise, nutrition, and a healthy lifestyle.",
+      "category": "health",
+      "difficulty": "easy",
+      "duration": 10,
+      "questions": [
+        {
+          "question": "How many minutes of moderate exercise are generally recommended per week for adults?",
+          "options": ["30 minutes", "60 minutes", "150 minutes", "300 minutes"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which nutrient is primarily responsible for building and repairing muscles?",
+          "options": ["Carbohydrates", "Fats", "Proteins", "Vitamins"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a cardio exercise?",
+          "options": ["Push-ups", "Squats", "Plank", "Running"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "Staying hydrated mainly means drinking enough:",
+          "options": ["Milk", "Juice", "Water", "Energy drinks"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which vitamin is mainly obtained from sunlight?",
+          "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a healthy source of fat?",
+          "options": ["French fries", "Butter", "Avocado", "Candy"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "What is BMI short for?",
+          "options": [
+            "Body Mass Index",
+            "Body Muscle Indicator",
+            "Basic Metabolism Input",
+            "Blood Mass Indicator"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which habit is best for good sleep?",
+          "options": [
+            "Using your phone in bed",
+            "Drinking coffee late",
+            "Having a consistent sleep schedule",
+            "Eating heavy right before bed"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which activity helps reduce stress?",
+          "options": [
+            "Meditation",
+            "Constant social media",
+            "Overeating",
+            "Sleeping all day"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is considered a processed food?",
+          "options": ["Apple", "Almonds", "Chicken breast", "Packaged chips"],
+          "correctAnswer": 3,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 19,
+      "title": "Personal Finance & Budgeting",
+      "description": "Learn core concepts of saving, budgeting, and managing personal money.",
+      "category": "finance",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "What is a budget?",
+          "options": [
+            "A bank account",
+            "A plan for your income and expenses",
+            "A type of tax",
+            "A savings app"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is usually considered an emergency fund?",
+          "options": [
+            "Money for vacation",
+            "Money for new phone",
+            "Savings for unexpected expenses",
+            "Money for shopping"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "What does APR stand for in finance?",
+          "options": [
+            "Annual Percentage Rate",
+            "Annual Payment Ratio",
+            "Asset Profit Rate",
+            "Average Price Return"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is an example of a fixed expense?",
+          "options": ["Groceries", "Rent", "Cinema tickets", "Restaurant"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Diversifying investments means:",
+          "options": [
+            "Putting all money in one stock",
+            "Keeping only cash",
+            "Spreading money across different assets",
+            "Spending more monthly"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a good financial habit?",
+          "options": [
+            "Ignoring your bank statements",
+            "Living beyond your means",
+            "Tracking expenses regularly",
+            "Paying bills late"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "What is compound interest?",
+          "options": [
+            "Interest only on the initial amount",
+            "Interest on interest plus principal",
+            "Interest added once a year only",
+            "Interest before taxes"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "A credit score measures:",
+          "options": [
+            "Your net worth",
+            "Your income",
+            "Your reliability in repaying debt",
+            "Your savings rate"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which is usually considered a good saving rule?",
+          "options": [
+            "Save 1% of your income",
+            "Save after spending everything",
+            "Pay yourself first by saving a part of income",
+            "Never save, only invest"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "ETF in investing stands for:",
+          "options": [
+            "Electronic Trade Fund",
+            "Exchange-Traded Fund",
+            "Extra Tax Fee",
+            "Equity Transfer Form"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 20,
+      "title": "Web Development Basics",
+      "description": "HTML, CSS, JavaScript fundamentals and how the web works.",
+      "category": "technology",
+      "difficulty": "easy",
+      "duration": 11,
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Trainer Markup Language",
+            "Hyper Text Markup Language",
+            "High Text Modern Language",
+            "Hyperlink Text Machine Language"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which language is mainly used to style web pages?",
+          "options": ["HTML", "CSS", "JavaScript", "SQL"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which tag is used for the largest heading in HTML?",
+          "options": ["<h6>", "<head>", "<h1>", "<title>"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which language adds interactivity to web pages?",
+          "options": ["CSS", "JavaScript", "HTML", "JSON"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which HTTP method is commonly used to retrieve data?",
+          "options": ["POST", "GET", "PUT", "DELETE"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Cascading Style Sheets",
+            "Creative Style System",
+            "Computer Styled Sections",
+            "Colorful Style Syntax"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which HTML tag is used for a link?",
+          "options": ["<link>", "<a>", "<href>", "<url>"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Flexbox and Grid are features of:",
+          "options": ["HTML", "JavaScript", "CSS", "SQL"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a JavaScript framework?",
+          "options": ["React", "Laravel", "Django", "Flask"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Responsive web design means:",
+          "options": [
+            "Fast websites",
+            "Sites adapted to different screen sizes",
+            "Websites with animations only",
+            "Sites that respond to emails"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 21,
+      "title": "Operating Systems Basics",
+      "description": "Concepts like processes, memory, files, and system management.",
+      "category": "technology",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "Which of the following is NOT an operating system?",
+          "options": ["Linux", "Windows", "Android", "Chrome"],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "question": "Which OS is open-source?",
+          "options": ["Windows", "macOS", "Linux", "iOS"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "What is a process?",
+          "options": [
+            "A file on disk",
+            "A program in execution",
+            "A directory",
+            "A network packet"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "RAM stands for:",
+          "options": [
+            "Random Access Memory",
+            "Read-Only Memory",
+            "Real Application Memory",
+            "Remote Access Module"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which component manages hardware resources?",
+          "options": ["Kernel", "Shell", "Compiler", "Driver"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which is a type of user interface?",
+          "options": ["Command line", "Firmware", "RAM", "CPU"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "File extension .exe is typically for:",
+          "options": ["Image", "Text file", "Executable", "Audio"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a mobile operating system?",
+          "options": ["Ubuntu", "Android", "Fedora", "Debian"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Virtual memory is:",
+          "options": [
+            "Only physical RAM",
+            "Part of CPU",
+            "Disk space used as extra RAM",
+            "Only cache memory"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which command lists files in Linux?",
+          "options": ["ls", "cd", "rm", "mkdir"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 22,
+      "title": "Psychology & Human Behavior",
+      "description": "Discover basic concepts of psychology, personality, and behavior.",
+      "category": "psychology",
+      "difficulty": "medium",
+      "duration": 11,
+      "questions": [
+        {
+          "question": "Psychology is the scientific study of:",
+          "options": [
+            "Plants",
+            "Human and animal mind and behavior",
+            "Machines",
+            "Societies only"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which psychologist is known for the hierarchy of needs?",
+          "options": ["Freud", "Maslow", "Skinner", "Piaget"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which term describes learning by association?",
+          "options": [
+            "Classical conditioning",
+            "Cognitive dissonance",
+            "Operant conditioning",
+            "Social learning"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Introversion is characterized by:",
+          "options": [
+            "High need for constant socializing",
+            "Preference for calm and low-stimulation environments",
+            "Aggressive behavior",
+            "Lack of emotions"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which part of the brain is primarily involved in decision making?",
+          "options": [
+            "Cerebellum",
+            "Frontal lobe",
+            "Brainstem",
+            "Occipital lobe"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Empathy means:",
+          "options": [
+            "Ignoring others’ feelings",
+            "Understanding and sharing the feelings of others",
+            "Manipulating emotions",
+            "Avoiding emotional situations"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Memory responsible for holding a phone number for a few seconds is:",
+          "options": [
+            "Long-term memory",
+            "Procedural memory",
+            "Short-term / working memory",
+            "Implicit memory"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which is a stress management technique?",
+          "options": [
+            "Overthinking",
+            "Deep breathing",
+            "Procrastination",
+            "Isolation"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which psychologist developed psychoanalysis?",
+          "options": ["Freud", "Maslow", "Bandura", "Vygotsky"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "A phobia is:",
+          "options": [
+            "Moderate fear",
+            "Extreme irrational fear of a specific object or situation",
+            "Normal stress response",
+            "Physical illness"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 23,
+      "title": "Environment & Climate Change",
+      "description": "Key facts about the environment, pollution, and global warming.",
+      "category": "environment",
+      "difficulty": "medium",
+      "duration": 12,
+      "questions": [
+        {
+          "question": "Which gas is a major contributor to global warming?",
+          "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Deforestation mainly means:",
+          "options": [
+            "Planting more trees",
+            "Cutting down forests",
+            "Protecting forests",
+            "Changing tree species"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which of these is a renewable energy source?",
+          "options": ["Coal", "Oil", "Wind", "Natural gas"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Recycling helps to:",
+          "options": [
+            "Increase pollution",
+            "Reduce waste and save resources",
+            "Produce more plastic",
+            "Destroy ecosystems"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "The ozone layer protects us from:",
+          "options": [
+            "Sound waves",
+            "Radio waves",
+            "Ultraviolet radiation",
+            "Infrared light"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which activity reduces your carbon footprint?",
+          "options": [
+            "Driving alone everywhere",
+            "Using public transport",
+            "Leaving lights on",
+            "Wasting water"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which of these is an effect of climate change?",
+          "options": [
+            "More stable weather",
+            "Rising sea levels",
+            "Less extreme events",
+            "Colder summers only"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is considered e-waste?",
+          "options": [
+            "Plastic bottle",
+            "Old smartphone",
+            "Banana peel",
+            "Paper"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What does 'sustainable' mean?",
+          "options": [
+            "Using resources faster",
+            "Using resources in a way that can be maintained long-term",
+            "Ignoring environmental impact",
+            "Producing more waste"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which international agreement focuses on climate change?",
+          "options": [
+            "Paris Agreement",
+            "Kyoto Restaurant",
+            "Geneva Sports Pact",
+            "New York Convention on Music"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 24,
+      "title": "Business & Entrepreneurship",
+      "description": "Basics of starting a business, strategy, and value creation.",
+      "category": "business",
+      "difficulty": "medium",
+      "duration": 13,
+      "questions": [
+        {
+          "question": "An entrepreneur is someone who:",
+          "options": [
+            "Manages a government office",
+            "Starts and runs a business taking financial risks",
+            "Only invests in stocks",
+            "Works as an employee only"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is a business model?",
+          "options": [
+            "A company logo",
+            "A plan for how a company creates and captures value",
+            "A product design",
+            "A marketing slogan"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which of these is a revenue stream?",
+          "options": [
+            "Costs",
+            "Customer support",
+            "Product sales",
+            "Employee salaries"
+          ],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "MVP in startups stands for:",
+          "options": [
+            "Most Valuable Person",
+            "Minimum Viable Product",
+            "Maximum Value Price",
+            "Market Value Potential"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "What is market research?",
+          "options": [
+            "Random guessing",
+            "Studying customers and competitors",
+            "Only reading news",
+            "Copying other businesses"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which is an example of a fixed cost?",
+          "options": [
+            "Rent",
+            "Shipping fees",
+            "Raw materials",
+            "Sales commission"
+          ],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "What does ROI stand for?",
+          "options": [
+            "Rate of Interest",
+            "Return on Investment",
+            "Revenue on Inventory",
+            "Risk of Inflation"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which of these is a marketing channel?",
+          "options": ["Email campaigns", "Salaries", "Rent", "Electricity"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Bootstrapping a business means:",
+          "options": [
+            "Using only external investors",
+            "Using your own savings and revenue to grow",
+            "Starting with a huge budget",
+            "Buying other companies"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which document describes vision, strategy, and finances of a startup?",
+          "options": ["Business card", "Invoice", "Business plan", "CV"],
+          "correctAnswer": 2,
+          "points": 10
+        }
+      ]
+    },
+
+    {
+      "id": 25,
+      "title": "Gaming & Esports",
+      "description": "Questions about popular video games, platforms, and esports concepts.",
+      "category": "entertainment",
+      "difficulty": "easy",
+      "duration": 10,
+      "questions": [
+        {
+          "question": "Which company created the PlayStation?",
+          "options": ["Nintendo", "Sony", "Microsoft", "Sega"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which game popularized the battle royale genre?",
+          "options": ["Minecraft", "PUBG", "Among Us", "Tetris"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which game features the character Mario?",
+          "options": ["Zelda", "Sonic", "Super Mario Bros", "Halo"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Which company develops the Xbox consoles?",
+          "options": ["Sony", "Nintendo", "Microsoft", "Valve"],
+          "correctAnswer": 2,
+          "points": 10
+        },
+        {
+          "question": "Esports refers to:",
+          "options": [
+            "Outdoor games",
+            "Electronic competitive gaming",
+            "Gym workouts",
+            "Racing only"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "League of Legends is a type of:",
+          "options": ["RPG", "MOBA", "FPS", "Racing game"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which game features building and survival blocks?",
+          "options": ["Fortnite", "Minecraft", "Overwatch", "CS:GO"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which device is typically used for PC gaming?",
+          "options": [
+            "Controller only",
+            "Mouse and keyboard",
+            "Steering wheel only",
+            "Remote control"
+          ],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which platform is known for PC game distribution?",
+          "options": ["Steam", "Netflix", "Spotify", "Hulu"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which of these games is a tactical FPS?",
+          "options": ["Valorant", "FIFA", "Rocket League", "The Sims"],
+          "correctAnswer": 0,
+          "points": 10
+        }
+      ]
+    }
+  ]
+}

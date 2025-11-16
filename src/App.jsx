@@ -5,7 +5,7 @@ import QuizDetail from "./pages/QuizDetail";
 import QuizStart from "./pages/QuizStart";
 import QuizLayout from "./components/QuizLayout";
 import { useEffect, useState } from "react";
-const BASE_URL = "http://localhost:8800/quizzes";
+const BASE_URL = "/quizzes.json";
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [quizzes, setQuizzes] = useState([]);
@@ -14,8 +14,8 @@ export default function App() {
     async function fetchQuizzes() {
       try {
         const res = await fetch(`${BASE_URL}`);
-        const data = await res.json();
-        setQuizzes(data);
+        const { quizzes } = await res.json();
+        setQuizzes(quizzes);
       } catch (err) {
         throw new Error("Failed fetching!");
       } finally {

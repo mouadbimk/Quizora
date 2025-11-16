@@ -1,16 +1,126 @@
-# React + Vite
+# Quiz Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a complete quiz application built with React. It allows users to browse quizzes, filter them, view detailed information, and take timed quizzes with scoring and progress tracking. All quiz data is served through a local JSON API using `json-server`.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Overview
+- Features
+- Technologies Used
+- Project Structure
+- API and Data
+- Installation
+- Running the Project
+- Available Scripts
+- Future Improvements
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The Quiz Platform is an interactive web application designed to test user knowledge in various domains. Users can explore quizzes, filter them by category or difficulty, view detailed metadata for each quiz, and take quizzes with a countdown timer. Upon completion, the system calculates the final score and compares it with the user's highest score.
 
-## Expanding the ESLint configuration
+The application uses component-based architecture and React hooks such as `useState`, `useEffect`, and `useReducer` for state management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screens
+
+![Main Screen](/screenShot/main.png)
+![Quizzes Screen](/screenShot/quizzes.png)
+![Details Quize Screen](/screenShot/detailsQuiz.png)
+![Question Screen](/screenShot/questionScreen.png)
+![Score Screen](/screenShot/scoreScreen.png)
+
+## Features
+
+### User Interface
+
+- Responsive interface built with React and CSS Modules
+- Navigation managed using `react-router-dom`
+- Home, Quizzes List, Quiz Detail, and Quiz Start pages
+
+### Quiz Functionality
+
+- Fetches quizzes from a local REST API
+- Filtering by search term, category, and difficulty
+- Quiz detail pages with description, duration, difficulty, and question count
+- Timer displayed during the quiz
+- Automatic scoring
+- High score tracking
+- Restart functionality
+
+### State Management
+
+- Local component state using `useState`
+- Quiz flow managed using `useReducer`
+- Loading, error, and finished states included
+
+## Technologies Used
+
+- React (Functional Components + Hooks)
+- React Router
+- CSS Modules
+- JSON Server
+- JavaScript ES2023
+- Vite
+
+## Project Structure
+
+```bash
+<Quizora>
+│
+├── data/               # json file of  content
+├── public/
+│   └── index.html      # Main HTML file
+│   └── quizzes.json    # local data
+├── src/
+│   ├── components/     # React components (QuizList, QuizCard, ProgressBar, etc.)
+│   ├── pages/          # UI/UX
+│   ├── App.js          # Main app component
+│   ├── index.js        # Entry point
+│   └── index.css      # Global styles
+├── package.json         # Project config and dependencies
+└── README.md
+</Quizora>
+```
+
+## API and Data
+
+The application uses `json-server` as a mock backend server.
+
+### Start the API
+
+```bash
+npm run server
+```
+
+### Endpoints
+
+- `GET /quizzes` – Returns all quizzes
+- `GET /quizzes?id=1` – Returns a specific quiz
+
+## Installation
+
+Clone the project:
+
+```bash
+git clone https://github.com/mouadbimk/Quizora
+
+npm install
+npm run dev
+```
+
+## Available Scripts
+
+| Command                                   | Description              |
+| ----------------------------------------- | ------------------------ |
+| `npm install`                             | Install dependencies     |
+| `npm run dev`                             | Start development server |
+| `npm run build`                           | Build the app            |
+| `json-server --watch db.json --port 8800` | Start mock API           |
+
+## Future Improvements
+
+- Add global state management using Context API
+- Implement authentication
+- Store high scores using a real backend
+- Add animations and UI improvements
+- Allow users to create custom quizzes
+- Deploy both frontend and backend publicly

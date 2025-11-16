@@ -33,7 +33,6 @@ function reducer(state, action) {
     case "dataFailed":
       return { ...state, status: "error" };
     case "start":
-      console.log(action.payload);
       return { ...state, status: "active", secondRemaining: action.payload };
     case "nextQuestion":
       const isLast = state.index + 1 === state.questions.length;
@@ -120,11 +119,12 @@ export default function QuizStart() {
     dispatch({ type: "dataFetching" });
     async function fetchQuiz() {
       try {
-        const res = await fetch(`http://localhost:8800/quizzes?id=${id}`, {
+        const res = await fetch("/quizzes.json", {
           signal: controller.signal,
         });
-        const data = await res.json();
-        dispatch({ type: "dataReceived", payload: data[0] });
+        const { quizzes } = await res.json();
+        const quiz = quizzes.find((q) => q.id === Number(id));
+        dispatch({ type: "dataReceived", payload: quiz });
       } catch (err) {
         dispatch({ type: "dataFailed" });
       }
@@ -132,7 +132,7 @@ export default function QuizStart() {
 
     fetchQuiz();
     //clean old requests before making a new one
-    return () => controller.abort();
+    // return () => controller.abort();
   }, [id]);
 
   return (
