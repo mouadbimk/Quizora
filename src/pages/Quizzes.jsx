@@ -2,13 +2,17 @@ import AppNav from "../components/AppNav";
 import styles from "./Quizzes.module.css";
 import QuizzesList from "../components/QuizzesList";
 import Loader from "../components/Loader";
+import { useState } from "react";
 function Quizzes({ isLoading, quizzes }) {
-  const categories = quizzes.reduce((arr, quiz) => {
-    if (!arr.map((el) => el.category).includes(quiz.category))
-      return [...arr, quiz.category];
-    else return arr;
-  }, []);
+  const [category, setCategory] = useState("all");
+  const [level, setLevel] = useState("all");
+  const categories = [...new Set(quizzes.map((q) => q.category))];
   const levels = [...new Set(quizzes.map((q) => q.difficulty))];
+  const [searchTerm, setSearchTerm] = useState("");
+  const quizzesList = quizzes
+    .filter((quiz) => quiz.category === category || category === "all")
+    .filter((q) => q.difficulty === level || level === "all")
+    .filter((q) => q.title.toLowerCase().includes(searchTerm.toLowerCase()));
   return (
     <>
       <AppNav />
@@ -19,11 +23,20 @@ function Quizzes({ isLoading, quizzes }) {
         {quizzes.length > 0 && (
           <>
             <div className={styles.box_search}>
-              <input type="text" name="search" placeholder="Search..." />
+              <input
+                type="text"
+                name="search"
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search..."
+              />
               <div className={styles.filter}>
                 <div className={styles.select}>
                   <label>Category</label>
-                  <select name="category">
+                  <select
+                    name="category"
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                  >
                     <option value={"all"}>All categories</option>
                     {categories.map((category, i) => (
                       <option value={category} key={i}>
@@ -34,7 +47,11 @@ function Quizzes({ isLoading, quizzes }) {
                 </div>
                 <div className={styles.select}>
                   <label>Difficulty</label>
-                  <select name="difficulty">
+                  <select
+                    name="difficulty"
+                    value={level}
+                    onChange={(e) => setLevel(e.target.value)}
+                  >
                     <option value={"all"}>All difficulties</option>
                     {levels.map((level, i) => (
                       <option value={level} key={i}>
@@ -45,7 +62,7 @@ function Quizzes({ isLoading, quizzes }) {
                 </div>
               </div>
             </div>
-            <QuizzesList quizzes={quizzes} />
+            <QuizzesList quizzes={quizzesList} />
           </>
         )}
       </div>
