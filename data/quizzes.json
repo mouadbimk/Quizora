@@ -16,7 +16,8 @@
             "A CSS preprocessor",
             "A database query language"
           ],
-          "correctAnswer": 0
+          "correctAnswer": 0,
+          "points": 10
         },
         {
           "question": "How do you pass data from a parent component to a child component?",
@@ -26,12 +27,14 @@
             "Using context",
             "Using refs"
           ],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 15
         },
         {
           "question": "What hook is used to manage state in a functional component?",
           "options": ["useEffect", "useContext", "useState", "useReducer"],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 10
         },
         {
           "question": "Which method is called once a component is mounted in the DOM?",
@@ -41,7 +44,8 @@
             "render",
             "useEffect with an empty dependency array"
           ],
-          "correctAnswer": 3
+          "correctAnswer": 3,
+          "points": 20
         },
         {
           "question": "What does `ReactDOM.createRoot()` do?",
@@ -51,7 +55,8 @@
             "Creates a virtual DOM tree",
             "Unmounts a component"
           ],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 10
         }
       ]
     },
@@ -71,32 +76,38 @@
             "The Egyptians",
             "The Mayans"
           ],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 15
         },
         {
           "question": "Who was the first emperor of Rome?",
           "options": ["Julius Caesar", "Augustus", "Nero", "Constantine"],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 25
         },
         {
           "question": "The ancient city of Babylon was located in modern-day...",
           "options": ["Egypt", "Greece", "Turkey", "Iraq"],
-          "correctAnswer": 3
+          "correctAnswer": 3,
+          "points": 30
         },
         {
           "question": "What is the name of the ancient writing system used by the Sumerians?",
           "options": ["Hieroglyphics", "Cuneiform", "Sanskrit", "Alphabet"],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 40
         },
         {
           "question": "The Parthenon is a famous temple dedicated to which Greek goddess?",
           "options": ["Hera", "Aphrodite", "Athena", "Artemis"],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 25
         },
         {
           "question": "The Terracotta Army was discovered in which country?",
           "options": ["Japan", "India", "China", "Vietnam"],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 20
         }
       ]
     },
@@ -111,17 +122,20 @@
         {
           "question": "Which planet is known as the Red Planet?",
           "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 20
         },
         {
           "question": "What is the largest planet in our solar system?",
           "options": ["Earth", "Saturn", "Jupiter", "Neptune"],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 10
         },
         {
           "question": "Which planet is closest to the Sun?",
           "options": ["Mercury", "Venus", "Earth", "Mars"],
-          "correctAnswer": 0
+          "correctAnswer": 0,
+          "points": 15
         }
       ]
     },
@@ -141,7 +155,8 @@
             "Leonardo da Vinci",
             "Donatello"
           ],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 15
         },
         {
           "question": "Which artist sculpted the statue of David?",
@@ -151,12 +166,14 @@
             "Raphael",
             "Sandro Botticelli"
           ],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 20
         },
         {
           "question": "The \"School of Athens\" is a famous fresco painted by which artist?",
           "options": ["Titian", "Giotto", "Raphael", "Caravaggio"],
-          "correctAnswer": 2
+          "correctAnswer": 2,
+          "points": 30
         },
         {
           "question": "Sandro Botticelli is famous for painting which masterpiece?",
@@ -166,7 +183,8 @@
             "The Creation of Adam",
             "The Arnolfini Portrait"
           ],
-          "correctAnswer": 1
+          "correctAnswer": 1,
+          "points": 20
         }
       ]
     }

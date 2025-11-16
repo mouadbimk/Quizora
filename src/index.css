@@ -19,3 +19,40 @@ body {
   height: 100vh;
   box-sizing: border-box;
 }
+
+button.correct {
+  border: 1px solid #2f9e44;
+  color: #2f9e44;
+}
+button.incorrect {
+  border: 1px solid #e03131;
+  color: #e03131;
+}
+.btn {
+  display: inline-block;
+  padding: 1.2rem 1.7rem;
+  font-family: inherit;
+  background-color: transparent;
+  font-size: 1.7rem;
+  border-radius: 0.7rem;
+  border: none;
+  cursor: pointer;
+}
+.answerBtn {
+  background-color: #fffe;
+  border: 1px solid #adb5bd;
+  width: 100%;
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.5rem;
+  transition: all 0.4s ease;
+}
+.answerBtn:hover {
+  background-color: #f1f3f5;
+}
+.answerBtn:disabled {
+  cursor: not-allowed;
+}
+button.answer {
+  background-color: #e9ecef;
+}

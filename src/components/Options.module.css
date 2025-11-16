@@ -1,0 +1,7 @@
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3.2rem;
+}

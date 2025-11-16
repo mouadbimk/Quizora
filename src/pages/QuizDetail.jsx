@@ -10,8 +10,12 @@ import Button from "../components/Button";
 function QuizDetail() {
   const { id } = useParams();
   const [searchParams, setSerachParams] = useSearchParams();
-  const diffiuclty = searchParams.get("diffiuclty");
+  const title = searchParams.get("title");
+  const difficulty = searchParams.get("difficulty");
   const numQuestions = searchParams.get("questions");
+  const duration = searchParams.get("duration");
+  const category = searchParams.get("category");
+  const description = searchParams.get("description");
   const navigate = useNavigate();
   return (
     <>
@@ -32,11 +36,8 @@ function QuizDetail() {
         </svg>
         Back to Quizzes
       </Link>
-      <h2 className={styles.title}>React Fundamentals</h2>
-      <p className={styles.description}>
-        Test your knowledge of the fundamental concepts of React, including
-        components, state, and props.
-      </p>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.description}>{description}</p>
       <div className={styles.details}>
         <div className={styles.boxInfo}>
           <div className={styles.icon}>
@@ -61,7 +62,7 @@ function QuizDetail() {
             </svg>
           </div>
           <span className={styles.categoryTitle}>Category</span>
-          <span className={styles.categoryName}>Technology</span>
+          <span className={styles.categoryName}>{category}</span>
         </div>
         <div className={styles.boxInfo}>
           <div className={styles.icon}>
@@ -101,7 +102,7 @@ function QuizDetail() {
             </svg>
           </div>
           <span className={styles.categoryTitle}>Duration</span>
-          <span className={styles.categoryName}>10 min</span>
+          <span className={styles.categoryName}>{duration} min</span>
         </div>
         <div className={styles.boxInfo}>
           <div className={styles.icon}>
@@ -121,15 +122,12 @@ function QuizDetail() {
             </svg>
           </div>
           <span className={styles.categoryTitle}>Difficulty</span>
-          <span className={`${styles.diffiuclty} ${styles[diffiuclty]}`}>
-            {diffiuclty}
+          <span className={`${styles.diffiuclty} ${styles[difficulty]}`}>
+            {difficulty}
           </span>
         </div>
       </div>
-      <Button
-        type={"primary"}
-        onClick={() => navigate(`../${id}/start?title=`)}
-      >
+      <Button type={"primary"} onClick={() => navigate(`../${id}/start`)}>
         Start Quiz Now
       </Button>
     </>

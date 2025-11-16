@@ -9,7 +9,6 @@ function Quizzes({ isLoading, quizzes }) {
     else return arr;
   }, []);
   const levels = [...new Set(quizzes.map((q) => q.difficulty))];
-  console.log(levels);
   return (
     <>
       <AppNav />
