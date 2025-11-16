@@ -5,7 +5,7 @@ import QuizDetail from "./pages/QuizDetail";
 import QuizStart from "./pages/QuizStart";
 import QuizLayout from "./components/QuizLayout";
 import { useEffect, useState } from "react";
-const BASE_URL = "/quizzes.json";
+const BASE_URL = "/Quizora/quizzes.json";
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [quizzes, setQuizzes] = useState([]);
@@ -25,7 +25,7 @@ export default function App() {
     fetchQuizzes();
   }, []);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Quizora">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route

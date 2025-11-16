@@ -7,6 +7,7 @@ import {
 
 import styles from "./QuizDetail.module.css";
 import Button from "../components/Button";
+import { useEffect } from "react";
 function QuizDetail() {
   const { id } = useParams();
   const [searchParams, setSerachParams] = useSearchParams();
@@ -17,6 +18,7 @@ function QuizDetail() {
   const category = searchParams.get("category");
   const description = searchParams.get("description");
   const navigate = useNavigate();
+
   return (
     <>
       <Link to={"/quizzes"} className={styles.backLink}>

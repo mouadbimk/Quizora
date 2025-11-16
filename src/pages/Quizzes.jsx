@@ -2,7 +2,7 @@ import AppNav from "../components/AppNav";
 import styles from "./Quizzes.module.css";
 import QuizzesList from "../components/QuizzesList";
 import Loader from "../components/Loader";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function Quizzes({ isLoading, quizzes }) {
   const [category, setCategory] = useState("all");
   const [level, setLevel] = useState("all");
@@ -13,6 +13,14 @@ function Quizzes({ isLoading, quizzes }) {
     .filter((quiz) => quiz.category === category || category === "all")
     .filter((q) => q.difficulty === level || level === "all")
     .filter((q) => q.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
+  useEffect(() => {
+    document.title = `Quizora - Quizzes`;
+
+    return () => {
+      document.title = `Quizora – React-Powered Quiz Application`;
+    };
+  }, []);
   return (
     <>
       <AppNav />

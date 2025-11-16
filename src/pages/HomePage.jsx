@@ -10,7 +10,7 @@ function HomePage() {
       <div className={styles.homePage}>
         <div className={styles.icon}>
           <svg width="50" height="50">
-            <use href="src/assets/icons.svg#question"></use>
+            <use href="/Quizora/icons.svg#question"></use>
           </svg>
         </div>
         <h1>Welcome to the Quiz Platform</h1>

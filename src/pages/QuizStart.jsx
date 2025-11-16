@@ -95,6 +95,8 @@ export default function QuizStart() {
     highscore,
     secondRemaining,
   } = state;
+  const title = quiz.title;
+
   const { id } = useParams();
   const TIME_OF_QUESTIONS = quiz.duration * 60;
 
@@ -113,13 +115,14 @@ export default function QuizStart() {
   const handleTimer = function () {
     dispatch({ type: "trick" });
   };
+
   // Data Fetching
   useEffect(() => {
     const controller = new AbortController();
     dispatch({ type: "dataFetching" });
     async function fetchQuiz() {
       try {
-        const res = await fetch("/quizzes.json", {
+        const res = await fetch("/Quizora/quizzes.json", {
           signal: controller.signal,
         });
         const { quizzes } = await res.json();
@@ -134,7 +137,14 @@ export default function QuizStart() {
     //clean old requests before making a new one
     // return () => controller.abort();
   }, [id]);
+  // handle document title
+  useEffect(() => {
+    document.title = `Quizora - ${title}`;
 
+    return () => {
+      document.title = `Quizora – React-Powered Quiz Application`;
+    };
+  }, [title]);
   return (
     <div>
       {status === "loading" && <Loader />}
