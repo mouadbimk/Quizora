@@ -109,12 +109,13 @@ npm run dev
 
 ## Available Scripts
 
-| Command                                   | Description              |
-| ----------------------------------------- | ------------------------ |
-| `npm install`                             | Install dependencies     |
-| `npm run dev`                             | Start development server |
-| `npm run build`                           | Build the app            |
-| `json-server --watch db.json --port 8800` | Start mock API           |
+| Command          | Description                    |
+| ---------------- | ------------------------------ |
+| `npm install`    | Install dependencies           |
+| `npm run dev`    | Start development server       |
+| `npm run build`  | Build the app                  |
+| `npm run server` | Start mock API                 |
+| `npm run deploy` | Deploy project in Github pages |
 
 ## Future Improvements
 
