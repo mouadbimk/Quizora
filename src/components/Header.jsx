@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import styles from "./AppNav.module.css";
-function AppNav() {
+function Header() {
   return (
     <nav className={styles.nav}>
       <Logo />
@@ -20,4 +20,4 @@ function AppNav() {
   );
 }
 
-export default AppNav;
+export default Header;

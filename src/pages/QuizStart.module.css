@@ -1,3 +1,28 @@
+.container {
+  background-color: #e7f5ff;
+  max-width: 120rem;
+  margin: 3.2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  min-height: 30rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .title {
+  font-size: 3.2rem;
+  color: #343a40;
+}
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 30rem;
+  flex-direction: column;
+  gap: 2rem;
+}
 .header {
   display: flex;
   align-items: center;

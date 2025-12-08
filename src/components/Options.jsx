@@ -1,6 +1,11 @@
+import { useDispatch, useSelector } from "react-redux";
 import styles from "./Options.module.css";
-function Options({ question, answer, onAnswer }) {
+import { addAnswer } from "../features/Quiz/quizSlice";
+function Options() {
+  const dispatch = useDispatch();
+  const { answer, questions, index } = useSelector((state) => state.quiz);
   const hasAnswer = answer !== null;
+  const question = questions.at(index);
   return (
     <div className={styles.answers}>
       {question.options.map((option, i) => (
@@ -12,7 +17,7 @@ function Options({ question, answer, onAnswer }) {
                 : "incorrect"
               : ""
           } ${i === answer ? "answer" : ""}`}
-          onClick={() => onAnswer(i)}
+          onClick={() => dispatch(addAnswer(i))}
           disabled={hasAnswer}
           key={option}
         >

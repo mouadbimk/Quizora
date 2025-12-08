@@ -7,6 +7,8 @@
   border-radius: 0.7rem;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .primary {
   background-color: #228be6;
@@ -47,4 +49,24 @@
 
 .previousBtn:hover {
   background-color: #f1f3f5;
+}
+.backLink {
+  display: flex;
+  color: #868e96;
+  text-decoration: none;
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+  transition: all 0.4s ease;
+  justify-content: start;
+}
+.backLink:hover {
+  color: #1c7ed6;
+}
+.backLink svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2px;
 }

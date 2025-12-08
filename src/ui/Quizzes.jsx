@@ -1,9 +1,10 @@
-import AppNav from "../components/AppNav";
 import styles from "./Quizzes.module.css";
 import QuizzesList from "../components/QuizzesList";
-import Loader from "../components/Loader";
 import { useEffect, useState } from "react";
-function Quizzes({ isLoading, quizzes }) {
+import { useLoaderData } from "react-router-dom";
+import { getQuizzes } from "../services/apiQuizzes";
+function Quizzes() {
+  const quizzes = useLoaderData();
   const [category, setCategory] = useState("all");
   const [level, setLevel] = useState("all");
   const categories = [...new Set(quizzes.map((q) => q.category))];
@@ -23,11 +24,9 @@ function Quizzes({ isLoading, quizzes }) {
   }, []);
   return (
     <>
-      <AppNav />
       <div className={styles.quizzes}>
         <h1>Browse Quizzes</h1>
-        {isLoading && <Loader />}
-        {!isLoading && quizzes.length === 0 && <p>No quizzes now.</p>}
+        {quizzes.length === 0 && <p>No quizzes now.</p>}
         {quizzes.length > 0 && (
           <>
             <div className={styles.box_search}>
@@ -79,3 +78,7 @@ function Quizzes({ isLoading, quizzes }) {
 }
 
 export default Quizzes;
+export async function Loader() {
+  const { quizzes } = await getQuizzes();
+  return quizzes;
+}

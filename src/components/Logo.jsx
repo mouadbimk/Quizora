@@ -4,7 +4,7 @@ function Logo() {
     <div className={styles.logo}>
       <div className={styles.icon}>
         <svg width="50" height="50">
-          <use href="/Quizora/icons.svg#idea"></use>
+          <use href="/icons.svg#idea"></use>
         </svg>
       </div>
       <h1>Quizora</h1>

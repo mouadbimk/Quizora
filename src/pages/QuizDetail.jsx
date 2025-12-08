@@ -1,27 +1,20 @@
-import {
-  Link,
-  useNavigate,
-  useParams,
-  useSearchParams,
-} from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 import styles from "./QuizDetail.module.css";
 import Button from "../components/Button";
-import { useEffect } from "react";
 function QuizDetail() {
-  const { id } = useParams();
-  const [searchParams, setSerachParams] = useSearchParams();
+  const { quizId } = useParams();
+  const [searchParams] = useSearchParams();
   const title = searchParams.get("title");
   const difficulty = searchParams.get("difficulty");
   const numQuestions = searchParams.get("questions");
   const duration = searchParams.get("duration");
   const category = searchParams.get("category");
   const description = searchParams.get("description");
-  const navigate = useNavigate();
 
   return (
-    <>
-      <Link to={"/quizzes"} className={styles.backLink}>
+    <div className={styles.container}>
+      <Button type={"backLink"} linkTo={"/quizzes"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -37,7 +30,7 @@ function QuizDetail() {
           />
         </svg>
         Back to Quizzes
-      </Link>
+      </Button>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
       <div className={styles.details}>
@@ -129,10 +122,10 @@ function QuizDetail() {
           </span>
         </div>
       </div>
-      <Button type={"primary"} onClick={() => navigate(`../${id}/start`)}>
+      <Button type={"primary"} linkTo={`../${quizId}/start`}>
         Start Quiz Now
       </Button>
-    </>
+    </div>
   );
 }
 

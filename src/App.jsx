@@ -1,42 +1,34 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import Quizzes from "./pages/Quizzes";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./ui/Home";
+import Quizzes from "./ui/Quizzes";
+import Error from "./ui/Error";
+import AppLayout from "./ui/AppLayout";
+import { Loader as quizzesLoader } from "./ui/Quizzes";
+import { Loader as quizLoader } from "./pages/QuizStart";
 import QuizDetail from "./pages/QuizDetail";
 import QuizStart from "./pages/QuizStart";
-import QuizLayout from "./components/QuizLayout";
-import { useEffect, useState } from "react";
-const BASE_URL = "/Quizora/quizzes.json";
 export default function App() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [quizzes, setQuizzes] = useState([]);
-  useEffect(() => {
-    setIsLoading(true);
-    async function fetchQuizzes() {
-      try {
-        const res = await fetch(`${BASE_URL}`);
-        const { quizzes } = await res.json();
-        setQuizzes(quizzes);
-      } catch (err) {
-        throw new Error("Failed fetching!");
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchQuizzes();
-  }, []);
+  const router = createBrowserRouter([
+    {
+      element: <AppLayout />,
+      errorElement: <Error />,
+      children: [
+        { path: "/", element: <Home /> },
+        {
+          path: "/quizzes",
+          loader: quizzesLoader,
+          element: <Quizzes />,
+        },
+        { path: "/quiz-detail/:quizId", element: <QuizDetail /> },
+        { path: "/:quizId/start", element: <QuizStart />, loader: quizLoader },
+      ],
+    },
+  ]);
+
   return (
-    <BrowserRouter basename="/Quizora">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route
-          path="quizzes"
-          element={<Quizzes quizzes={quizzes} isLoading={isLoading} />}
-        />
-        <Route path="quiz-detail" element={<QuizLayout />}>
-          <Route path=":id" element={<QuizDetail />} />
-          <Route path=":id/start" element={<QuizStart />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <div className="background"></div>
+      <RouterProvider router={router} />
+    </>
   );
 }

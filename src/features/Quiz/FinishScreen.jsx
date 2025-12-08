@@ -1,13 +1,33 @@
-import { useNavigate } from "react-router-dom";
-import Button from "./Button";
+import { useDispatch, useSelector } from "react-redux";
+import Button from "../../components/Button";
+import { restart } from "./quizSlice";
 import styles from "./FinishedScreen.module.css";
-function FinishedScreen({ points, quiz, onRestart, highscore }) {
-  const navigate = useNavigate();
+import { useEffect } from "react";
+import { useSetLocalStorage } from "../../hooks/useLocalStorage";
+function FinishedScreen() {
+  const { points, quiz, highscore, index, status } = useSelector(
+    (state) => state.quiz
+  );
+  const dispatch = useDispatch();
   const r = 80;
   const circumference = 2 * Math.PI * r;
   const totalPoints = quiz.questions.reduce((t, c) => c.points + t, 0);
   const progress = points / totalPoints; // 60%
-
+  const [results, setResults] = useSetLocalStorage("quiz-result", []);
+  useEffect(() => {
+    return () => {
+      const newResult = {
+        points,
+        quiz,
+        highscore,
+        index,
+        totalQuestions: quiz.questions,
+        status,
+        date: new Date().toISOString(),
+      };
+      setResults((prev) => [...prev, newResult]);
+    };
+  }, []);
   return (
     <div className={styles.result}>
       <h2>Quiz Completed!</h2>
@@ -45,10 +65,10 @@ function FinishedScreen({ points, quiz, onRestart, highscore }) {
       </div>
       <p className={styles.highscore}>Highscore: {highscore}</p>
       <div className={styles.btns}>
-        <Button type={"primary"} onClick={onRestart}>
+        <Button type={"primary"} onClick={() => dispatch(restart())}>
           Try Again
         </Button>
-        <Button type={"previousBtn"} onClick={() => navigate("/quizzes")}>
+        <Button type={"previousBtn"} linkTo={"/quizzes"}>
           View Other Quizzes
         </Button>
       </div>

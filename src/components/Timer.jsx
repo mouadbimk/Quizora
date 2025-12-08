@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styles from "./Timer.module.css";
+import { useDispatch } from "react-redux";
 export default function Timer({ secondRemaining, onTimerChange }) {
   const minutes = Math.floor(secondRemaining / 60);
   const seconds = secondRemaining % 60;
