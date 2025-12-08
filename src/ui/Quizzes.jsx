@@ -35,6 +35,7 @@ function Quizzes() {
                 name="search"
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search..."
+                className="input w-full border-gray-500 focus:border-sky-600 text-xl mb-6"
               />
               <div className={styles.filter}>
                 <div className={styles.select}>

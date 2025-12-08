@@ -1,10 +1,39 @@
-/* @import "tailwindcss"; */
-@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
-:root {
-  /* --background-color: #f1f3f5; */
-  --color-text: #094067;
+@import "tailwindcss";
+@font-face {
+  font-family: Rubik;
+  src: url("../src/assets/Rubik-Regular.ttf");
 }
-* {
+@layer components {
+  .active {
+    @apply text-blue-500 font-medium text-[1.2rem] leading-0 transition-all duration-300;
+  }
+  .input {
+    @apply block py-2 px-4 text-[1rem] border border-sky-600 rounded-xl transition-all duration-300 focus:w-md 
+        placeholder:text-stone-400 w-60 focus:outline-none focus:ring focus:ring-sky-500 focus:border-sky-200 bg-white text-sm sm:py-3 sm:px-4 mb-4;
+  }
+}
+@theme {
+  --font-rubik: Rubik, "sans-serif";
+}
+.background {
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  min-height: 100dvh;
+  background-image: radial-gradient(
+    125% 125% at 50% 10%,
+    #ffffff 40%,
+    #74c0fc 100%
+  );
+  background-size: 100% 100%;
+  height: 100%;
+  min-height: 100dvh;
+}
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -14,9 +43,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Stack Sans Headline", sans-serif;
   font-size: 1.6rem;
-  /* background-color: var(--background-color); */
   height: 100dvh;
   box-sizing: border-box;
 }
@@ -73,4 +100,4 @@ button.incorrect {
 }
 button.answer {
   background-color: #e9ecef;
-}
+} */

@@ -1,13 +1,12 @@
-import styles from "./Logo.module.css";
 function Logo() {
   return (
-    <div className={styles.logo}>
-      <div className={styles.icon}>
+    <div className="flex items-center gap-2">
+      <div className="w-8 h-8 bg-blue-200 p-[0.2rem] flex items-center justify-center rounded-md">
         <svg width="50" height="50">
           <use href="/icons.svg#idea"></use>
         </svg>
       </div>
-      <h1>Quizora</h1>
+      <h1 className="text-[1.8rem] font-bold capitalize">Quizora</h1>
     </div>
   );
 }

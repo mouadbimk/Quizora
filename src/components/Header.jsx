@@ -1,18 +1,20 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import styles from "./AppNav.module.css";
 function Header() {
   return (
-    <nav className={styles.nav}>
+    <nav
+      className="flex items-center justify-between py-2 px-6
+     bg-[#e7f5ff] rounded-xl mx-12 my-6"
+    >
       <Logo />
-      <ul className={styles.navLink}>
-        <li>
+      <ul className="flex items-center gap-4 text-stone-800 list-none font-small">
+        <li className="text-[1.1rem] hover:text-[#1971c2] transition-all delay-75">
           <NavLink to={"/"}>Home</NavLink>
         </li>
-        <li>
+        <li className="text-[1.1rem] hover:text-[#1971c2] transition-all delay-75">
           <NavLink to={"/quizzes"}>Quizzes</NavLink>
         </li>
-        <li>
+        <li className="text-[1.1rem] hover:text-[#1971c2] transition-all delay-75">
           <NavLink to={"/about"}>About</NavLink>
         </li>
       </ul>

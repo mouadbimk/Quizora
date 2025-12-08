@@ -1,16 +1,15 @@
 import { Outlet, useNavigation } from "react-router-dom";
 import Header from "../components/Header";
 import LoaderFullPage from "../components/LoaderFullPage";
-import styles from "./AppLayout.module.css";
 function AppLayout() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
   return (
-    <div className={styles.container}>
+    <div className="grid grid-rows-[auto_1fr] min-h-screen grid-cols-1 items-center justify-center font-rubik">
       {isLoading && <LoaderFullPage />}
       <Header />
-      <div className="overflow-scroll">
-        <main className="mx-auto max-w-3xl">
+      <div className="mx-auto w-full max-w-340">
+        <main>
           <Outlet />
         </main>
       </div>
