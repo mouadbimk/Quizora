@@ -1,8 +1,7 @@
 import QuizeItem from "./QuizeItem";
-import styles from "./QuizzesList.module.css";
 export default function QuizzesList({ quizzes }) {
   return (
-    <div className={styles.quizzesList}>
+    <div className="grid grid-cols-3 gap-6 mt-3 items-center justify-center">
       {quizzes &&
         quizzes.map((quize) => (
           <QuizeItem

@@ -26,12 +26,18 @@ export default function QuizStart() {
   }, [title]);
 
   return (
-    <div className={styles.container}>
+    <div className="bg-white shadow-xl rounded-xl mt-6 p-4 min-h-80">
       {statusQuiz === "ready" && <StartScreen />}
 
       {statusQuiz === "idle" && (
-        <div className={styles.information}>
-          <h2 className={styles.title}>{quiz.title}</h2>
+        <div className="flex items-center justify-center flex-col gap-5 ">
+          <h2 className="text-4xl text-gray-700 capitalize mb-1">
+            {quiz.title}
+          </h2>
+          <p className="text-xl text-gray-400 mb-6">
+            You will start the quiz after clicking the button below so get
+            ready.
+          </p>
           <Button
             type={"primary"}
             onClick={() =>

@@ -1,4 +1,3 @@
-import styles from "./Quizzes.module.css";
 import QuizzesList from "../components/QuizzesList";
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
@@ -24,23 +23,26 @@ function Quizzes() {
   }, []);
   return (
     <>
-      <div className={styles.quizzes}>
-        <h1>Browse Quizzes</h1>
+      <div className="mx-auto my-3 bg-white p-6 rounded-xl shadow-xl">
+        <h1 className="text-2xl font-bold text-center mb-4">Browse Quizzes</h1>
         {quizzes.length === 0 && <p>No quizzes now.</p>}
         {quizzes.length > 0 && (
           <>
-            <div className={styles.box_search}>
+            <div className="py-4 px-6">
               <input
                 type="text"
                 name="search"
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search..."
-                className="input w-full border-gray-500 focus:border-sky-600 text-xl mb-6"
+                className="input w-full border-gray-300 focus:border-sky-600 text-md my-3 py-2 px-4 rounded-md"
               />
-              <div className={styles.filter}>
-                <div className={styles.select}>
-                  <label>Category</label>
+              <div className="flex items-center justify-center w-full gap-3">
+                <div className="flex-1">
+                  <label className="block my-3 capitalize font-medium text-stone-600 text-center text-[1.1rem]">
+                    Category
+                  </label>
                   <select
+                    className="px-3 py-2 w-full focus:outline-none border-2 border-sky-100 rounded-md capitalize block transition-all duration-300 focus-visible:border-sky-500 text-sm"
                     name="category"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
@@ -53,9 +55,12 @@ function Quizzes() {
                     ))}
                   </select>
                 </div>
-                <div className={styles.select}>
-                  <label>Difficulty</label>
+                <div className="flex-1">
+                  <label className="block my-3 capitalize font-medium text-stone-600 text-center text-[1.1rem]">
+                    Difficulty
+                  </label>
                   <select
+                    className="px-3 py-2 w-full focus:outline-none border-2 border-sky-100 rounded-md capitalize block transition-all duration-300 focus-visible:border-sky-500 focus:shadow-xl text-sm"
                     name="difficulty"
                     value={level}
                     onChange={(e) => setLevel(e.target.value)}

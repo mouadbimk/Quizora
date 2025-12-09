@@ -8,7 +8,7 @@
     @apply text-blue-500 font-medium text-[1.2rem] leading-0 transition-all duration-300;
   }
   .input {
-    @apply block py-2 px-4 text-[1rem] border border-sky-600 rounded-xl transition-all duration-300 focus:w-md 
+    @apply block py-2 px-4 text-[1rem] border border-gray-300 rounded-xl transition-all duration-300 focus:w-md 
         placeholder:text-stone-400 w-60 focus:outline-none focus:ring focus:ring-sky-500 focus:border-sky-200 bg-white text-sm sm:py-3 sm:px-4 mb-4;
   }
 }
