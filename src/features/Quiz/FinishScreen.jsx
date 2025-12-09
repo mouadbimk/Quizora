@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import Button from "../../components/Button";
 import { restart } from "./quizSlice";
-import styles from "./FinishedScreen.module.css";
 import { useEffect } from "react";
 import { useSetLocalStorage } from "../../hooks/useLocalStorage";
 function FinishedScreen() {
@@ -29,12 +28,12 @@ function FinishedScreen() {
     };
   }, []);
   return (
-    <div className={styles.result}>
-      <h2>Quiz Completed!</h2>
-      <p className={styles.des}>
+    <div className="flex items-center justify-center flex-col">
+      <h2 className="text-2xl mb-8 text-gray-600">Quiz Completed!</h2>
+      <p className="text-[1.2rem] text-gray-500 mb-4">
         Here's how you performed on the "{quiz.title}" quiz.
       </p>
-      <div className={styles.progress}>
+      <div className="w-50 h-50 mx-auto relative mb-8">
         <svg viewBox="0 0 200 200" width="200" height="200">
           <circle
             cx="100"
@@ -57,14 +56,14 @@ function FinishedScreen() {
             transform="rotate(-90 100 100)" // البداية من أعلى
           />
         </svg>
-        <p className={styles.points}>
+        <p className="absolute top-1/2 left-1/2 z-50 transform-[translate(-50%,-50%)]">
           <strong>
             {points}/ {totalPoints}
           </strong>
         </p>
       </div>
-      <p className={styles.highscore}>Highscore: {highscore}</p>
-      <div className={styles.btns}>
+      <p className="text-sm text-gray-600 mb-8">Highscore: {highscore}</p>
+      <div className="flex items-center justify-center gap-5 mb-8">
         <Button type={"primary"} onClick={() => dispatch(restart())}>
           Try Again
         </Button>

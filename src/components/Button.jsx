@@ -13,6 +13,9 @@ function Button({ children, type, onClick, linkTo }) {
       "bg-[#fffe] border-gray-400 w-full py-2 text-md rounded-lg text-gray-400 hover:text-gray-500 hover:border-gray-500 ",
     backLink:
       "flex text-gray-500 items-center gap-1 leading-0 mb-2 hover:text-sky-500 transition-all duration-300",
+    previousBtn:
+      base +
+      "bg-[#fffe] border-gray-400 w-fit text-[1rem] text-gray-600 py-2.5 px-4 transition-all duration-300 hover:bg-gray-200 rounded-xl",
   };
   if (linkTo)
     return (

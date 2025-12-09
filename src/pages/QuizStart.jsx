@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
-import styles from "./QuizStart.module.css";
 import Button from "../components/Button";
 import { getQuiz } from "../services/apiQuizzes";
 import { useDispatch, useSelector } from "react-redux";
@@ -26,7 +25,7 @@ export default function QuizStart() {
   }, [title]);
 
   return (
-    <div className="bg-white shadow-xl rounded-xl mt-6 p-4 min-h-80">
+    <div className="bg-white shadow-xl rounded-xl mt-6 p-4 min-h-80 mb-16">
       {statusQuiz === "ready" && <StartScreen />}
 
       {statusQuiz === "idle" && (
