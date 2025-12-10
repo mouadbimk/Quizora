@@ -8,22 +8,29 @@ import { Loader as quizLoader } from "./pages/QuizStart";
 import QuizDetail from "./pages/QuizDetail";
 import QuizStart from "./pages/QuizStart";
 export default function App() {
-  const router = createBrowserRouter([
-    {
-      element: <AppLayout />,
-      errorElement: <Error />,
-      children: [
-        { path: "/", element: <Home /> },
-        {
-          path: "/quizzes",
-          loader: quizzesLoader,
-          element: <Quizzes />,
-        },
-        { path: "/quiz-detail/:quizId", element: <QuizDetail /> },
-        { path: "/:quizId/start", element: <QuizStart />, loader: quizLoader },
-      ],
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        element: <AppLayout />,
+        errorElement: <Error />,
+        children: [
+          { path: "/", element: <Home /> },
+          {
+            path: "/quizzes",
+            loader: quizzesLoader,
+            element: <Quizzes />,
+          },
+          { path: "/quiz-detail/:quizId", element: <QuizDetail /> },
+          {
+            path: "/:quizId/start",
+            element: <QuizStart />,
+            loader: quizLoader,
+          },
+        ],
+      },
+    ],
+    { basename: "/Quizora" }
+  );
 
   return (
     <>

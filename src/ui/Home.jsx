@@ -6,13 +6,13 @@ function Home() {
     <div className="flex items-center justify-center flex-col gap-3">
       <div className="w-[100px] h-[100px] bg-sky-200 flex items-center justify-center rounded-xl mb-3 p-4">
         <svg width="50" height="50" className="w-full h-full">
-          <use href="/icons.svg#question"></use>
+          <use href="/Quizora/icons.svg#question"></use>
         </svg>
       </div>
       <h1 className="text-5xl font-bold font-rubik max-w-150 text-center leading-15 my-2 sm:text-6xl text-gray-800">
         Welcome to the Quiz Platform
       </h1>
-      <p className="text-xl max-w-115 sm:text-center sm:max-w-150 text-left text-center leading-8 my-2 text-gray-600">
+      <p className="text-xl max-w-115 sm:text-center sm:max-w-150 text-left sm:text-center leading-8 my-2 text-gray-600">
         Challenge yourself with our collection of quizzes on various topics.
         Sharpen your mind and learn something new today!
       </p>

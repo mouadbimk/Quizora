@@ -1,4 +1,4 @@
-const BASE_URL = "/quizzes.json";
+const BASE_URL = "/Quizora/quizzes.json";
 export async function getQuizzes() {
   const res = await fetch(BASE_URL);
   if (!res.ok) throw new Error("Failed getting quizzes!");
