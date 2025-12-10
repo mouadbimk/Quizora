@@ -30,7 +30,7 @@ function FinishedScreen() {
   return (
     <div className="flex items-center justify-center flex-col">
       <h2 className="text-2xl mb-8 text-gray-600">Quiz Completed!</h2>
-      <p className="text-[1.2rem] text-gray-500 mb-4">
+      <p className="text-[1.2rem] text-gray-500 mb-4 text-center">
         Here's how you performed on the "{quiz.title}" quiz.
       </p>
       <div className="w-50 h-50 mx-auto relative mb-8">

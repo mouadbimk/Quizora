@@ -25,7 +25,7 @@ export default function QuizStart() {
   }, [title]);
 
   return (
-    <div className="bg-white shadow-xl rounded-xl mt-6 p-4 min-h-80 mb-16">
+    <div className="bg-white shadow-xl rounded-xl mt-6 p-4 min-h-80 sm:mb-16">
       {statusQuiz === "ready" && <StartScreen />}
 
       {statusQuiz === "idle" && (

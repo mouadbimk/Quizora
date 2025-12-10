@@ -9,10 +9,10 @@ function Home() {
           <use href="/icons.svg#question"></use>
         </svg>
       </div>
-      <h1 className="text-6xl font-bold font-rubik max-w-150 text-center leading-15 my-2">
+      <h1 className="text-5xl font-bold font-rubik max-w-150 text-center leading-15 my-2 sm:text-6xl text-gray-800">
         Welcome to the Quiz Platform
       </h1>
-      <p className="text-xl max-w-170 text-center leading-8 my-2 text-stone-600">
+      <p className="text-xl max-w-115 sm:text-center sm:max-w-150 text-left text-center leading-8 my-2 text-gray-600">
         Challenge yourself with our collection of quizzes on various topics.
         Sharpen your mind and learn something new today!
       </p>
@@ -25,9 +25,11 @@ function Home() {
         className="input"
       />
       {username && (
-        <Button type="primary" linkTo={"/quizzes"}>
-          {username.toUpperCase()} &#45; Start the Quiz
-        </Button>
+        <div className="mb-6 sm:mb-2">
+          <Button type="primary" linkTo={"/quizzes"}>
+            {username.toUpperCase()} &#45; Start the Quiz
+          </Button>
+        </div>
       )}
     </div>
   );

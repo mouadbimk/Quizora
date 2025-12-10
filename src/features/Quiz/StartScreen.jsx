@@ -18,11 +18,11 @@ function StartScreen() {
 
   return (
     <>
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between mb-8 px-4">
         <h2 className="text-xl text-gray-700">{quiz.title}</h2>
         <Timer secondRemaining={secondRemaining} onTimerChange={handleTimer} />
       </div>
-      <div className="flex flex-col gap-5 mb-8">
+      <div className="flex flex-col gap-5 mb-8 px-4">
         <p className="text-sm text-gray-500">
           Question {index + 1} of {questions.length}
         </p>
@@ -34,12 +34,12 @@ function StartScreen() {
       </div>
       <div className="flex items-center justify-center flex-col gap-5">
         <div className="bg-[#e9ecef] w-full h-50 flex items-center justify-center border border-gray-300 shadow-md rounded-xl">
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-3xl font-semibold text-center">
             {questions[index].question}
           </h3>
         </div>
         <Options />
-        <div className="flex items-center justify-end w-full">
+        <div className="flex flex-col sm:flex-row items-center justify-end w-full">
           {hasAnswer && (
             <Button type={"primary"} onClick={() => dispatch(goToNext())}>
               {index + 1 < questions.length ? "Next" : "Finish"}

@@ -36,8 +36,8 @@ function Quizzes() {
                 placeholder="Search..."
                 className="input w-full border-gray-300 focus:border-sky-600 text-md my-3 py-2 px-4 rounded-md"
               />
-              <div className="flex items-center justify-center w-full gap-3">
-                <div className="flex-1">
+              <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-3">
+                <div className="w-full">
                   <label className="block my-3 capitalize font-medium text-stone-600 text-center text-[1.1rem]">
                     Category
                   </label>
@@ -55,7 +55,7 @@ function Quizzes() {
                     ))}
                   </select>
                 </div>
-                <div className="flex-1">
+                <div className="w-full ">
                   <label className="block my-3 capitalize font-medium text-stone-600 text-center text-[1.1rem]">
                     Difficulty
                   </label>

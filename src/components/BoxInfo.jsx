@@ -7,7 +7,7 @@ function BoxInfo({ children, placeholder, title, type = null }) {
     medium: base + "text-orange-600 bg-yellow-100",
   };
   return (
-    <div className="bg-[#f1f3f5] p-5 rounded-xl flex items-center justify-center flex-col w-1/4">
+    <div className="bg-[#f1f3f5] p-5 rounded-xl flex items-center justify-center flex-col flex-1 sm:w-1/4">
       <div className="w-15 h-15 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -30,11 +30,11 @@ function QuizDetail() {
         </svg>
         Back to Quizzes
       </Button>
-      <h2 className="text-3xl my-4 text-gray-800 text-center">{title}</h2>
-      <p className="text-[1.08rem] text-center mb-7 mx-auto text-gray-600 max-w-1/2">
+      <h2 className="text-3xl my-4 mt-6 text-gray-800 text-center">{title}</h2>
+      <p className="text-[1.08rem] text-center mb-7 mx-auto text-gray-600 sm:max-w-1/2">
         {description}
       </p>
-      <div className="flex items-center justify-center gap-5 mb-8">
+      <div className="flex sm:flex-row flex-wrap items-center justify-center gap-5 mb-8">
         <BoxInfo title={"Category"} placeholder={category}>
           <path
             strokeLinecap="round"
